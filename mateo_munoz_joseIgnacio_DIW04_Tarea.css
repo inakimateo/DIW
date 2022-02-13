@@ -1,0 +1,137 @@
+
+  /* Fuente Roboto de Google Fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  header {
+    display: block;
+    max-width: 1200px;
+    max-height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px 0px 25px 10px;
+    background-image: url("img/Captura.17c5e965.PNG");
+    background-position: 50% 50%;
+    /*background-position: -225px -620px;*/
+    background-repeat: no-repeat; 
+  }
+
+  .container {
+    color: black;
+  }
+ 
+  .item {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    clear: both;
+  }
+
+  h1 {
+    font-weight: 900;
+  }
+
+  /* Menú de Navegación */
+  .menu {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;;
+  }
+
+  div.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  /* Ajuste del menú horizontal para pantallas */
+  @media only screen and (min-width: 768px) {
+    div.menu li { float: left; padding: 0 2em; }
+  }
+
+  div.menu a { 
+      display: block;
+      line-height: 2.1em;
+      text-align: center;
+      text-decoration: none;
+      color: black; 
+      font-weight: bold;
+  }
+
+  div.menu li:hover {
+    background-color: silver;
+  }
+
+  /* Cuerpo de la página */
+  .justificado {
+    text-align: justify;
+  }
+
+  .centrado {
+    text-align: center;
+  }
+
+  .destacado {
+    padding: 15px;
+    background-color: lightGray ;
+    border-width: 0px 5px 0px 0px;
+    border-style: solid;
+    border-color: lightSalmon;
+
+  }
+
+  /* Galería de Imágenes (Flexbox) */
+  .img-area {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .img-item{
+    padding: 0 10px 10px;
+  }
+
+  img:hover{
+      opacity: .5;
+      transition: .9s;
+  }
+
+  figcaption{
+    font-size: smaller;
+    font-weight: lighter;
+    text-align: center;
+  }
+
+  /* Sección Contacto y Pie de página */
+  #contact {
+    text-transform: uppercase;
+  }
+
+  .pie {
+    max-width: 1200px;
+    max-height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0px 10px 20px;
+    background-color: black;
+    color: white;
+  }
+
+  div.pie a {
+    padding: 0 10px;
+  }
+
+  div.pie a:link, div.pie a:visited {
+    color: white;
+  }
+
+  div.pie a:hover {
+    color: lightSalmon;
+  }
