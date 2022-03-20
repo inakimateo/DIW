@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Enciclopedia Front-End</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <!--Fontawesome -->
+	<script src="https://kit.fontawesome.com/0f8c53ad88.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <a class="sr" href="#main">Saltar al contenido principal</a>
+    <header>
+        <div class="cabecera">
+            <!--Logotipo-->
+            <a href="modulos.html"><img src="img/logo_black.png" class="logo" width="162" height="162" alt="Logotipo" srcset="img/logo_black.svg" /></a>
+            <!--Título Web-->
+            <h1>Enciclopedia Front-End</h1>
+            <!--Menú Idiomas-->
+            <ul class="idioma">
+                <li><a href="modulos.html">CA</a></li>
+                <li><a href="modulos.html" class="seleccionado">ES</a></li>
+                <li><a href="modulos.html">EN</a></li>
+            </ul>
+        </div>
+        <!--Menú Superior-->
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="modulos.html">Module-Bundlers</a></li>
+                    <li><a href="lenguajes.html" class="seleccionado">Lenguajes Front-End</a></li>
+                    <li><a href="">Preprocesadores</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--Contenido Principal-->
+    <main id="main">
+        <!--Imágen destacada-->
+        <div class="imagen_destacada">
+            <figure>
+                <img class="imagen_destacada" 
+                srcset="img/website-development_small.jpg 320w,
+                img/website-development_medium.jpg 960w,
+                img/website-development_large.jpg 1044w"
+                sizes=" (max-width: 30em) 60vw,
+                (max-width: 40em) 90vw"
+                src="website-development_medium.jpg" 
+                alt="escritorio">
+            </figure>
+        </div>
+        <!--Intro-->
+        <article>
+            <h2>Las bases del frontend</h2>
+            <p>A pesar de que hay varios lenguajes que se usan en el frontend, nosotros nos fijaremos en tres elementos: HTML, CSS y JavaScript (aunque HTML y CSS no son lenguajes de programación propiamente dichos)</p>
+        </article>
+
+        <!--Galeria-->
+        <div class="img-area">
+            <div class="img-item"><figure><img src="img/01.PNG" alt="¿Que es Java Script?"><figcaption>¿Que es Java Script?</figcaption></figure></div>
+            <div class="img-item"><figure><img src="img/02.PNG" alt="¿Que es HTML5?"><figcaption>¿Que es HTML5?</figcaption></figure></div>
+            <div class="img-item"><figure><img src="img/03.PNG" alt="¿Que es CSS?"><figcaption>¿Que es CSS?</figcaption></figure></div>
+        </div>
+    </main>
+
+    <!--Pie-->
+    <footer>
+        <div class="pie">
+            <!--Logotipo-->
+            <a href="modulos.html"><img src="img/logo_white.png" class="logo" width="100" height="100" alt="Logotipo" srcset="img/logo_white.svg" /></a>
+            <!--Titulo Web-->
+            <h1>Enciclopedia Front-End</h1>
+            <!--Datos Contacto-->
+            <address>
+                <p>Calle Cantones 9. 31243 Arróniz</p>
+                <p><a href="tel:+34948226536">Tel. 948 226 536</a></p>
+                <p><a href="mailto:info@enciclopediafrontend.org">info@enciclopediafrontend.org</a></p>
+            </address>
+            <!--RRSS-->
+            <ul>
+                <li><a href="https://facebook.com" target="_blank" title="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com" target="_blank" title="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://instagram.com" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://youtube.com" target="_blank" title="Youtube"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+            <!--Menú Inferior-->
+            <ul class="accesos">
+                <li><a href="">Quiénes somos</a></li>
+                <li><a href="">Política de privacidad</a></li>
+                <li><a href="">Aviso legal</a></li>
+                <li><a href="">Cookies</a></li>
+            </ul>        
+            <!--Créditos-->
+            <div class="creditos">
+                <p>Actividad realizada por José Ignacio Mateo Muñoz, para la asignatura <abbr title="Diseño Web de Interfaces">DIW</abbr> (Tarea 5)</p>
+                <p><a href="https://www.freepik.es/vectores/logo-grafica">Vector de logo grafica creado por rawpixel.com - www.freepik.es</a></p>
+                <p><a href='https://www.freepik.es/fotos/navegar-internet'>Foto de navegar internet creado por rawpixel.com - www.freepik.es</a></p>
+                <p><a href='https://www.freepik.es/vectores/javascript'>Vector de javascript creado por vectorjuice - www.freepik.es</a></p>
+                <p><a href='https://www.freepik.es/vectores/javascript'>Vector de javascript creado por vectorjuice - www.freepik.es</a></p>
+                <p><a href='https://www.freepik.es/vectores/html5'>Vector de html5 creado por vectorjuice - www.freepik.es</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
