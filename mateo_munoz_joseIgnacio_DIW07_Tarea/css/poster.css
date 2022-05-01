@@ -1,0 +1,209 @@
+/* Estilos POSTER */
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+.element-invisible {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 1.1rem;
+    font-family: 'Rajdhani', sans-serif;
+}
+body {
+    background-position: right top;
+    background: url("https://upload.wikimedia.org/wikipedia/commons/8/8b/Tel_Aviv_Promenade_panoramics.jpg") no-repeat;
+    background-size: cover;    
+    backdrop-filter: blur(1.75rem);
+}
+main {
+    margin: 3vh auto;
+    width: 90%;
+    background: url("https://upload.wikimedia.org/wikipedia/commons/8/8b/Tel_Aviv_Promenade_panoramics.jpg") no-repeat;
+    overflow: hidden;
+    height: 150vh;
+    background-size: cover;
+    background-position-y: -100px;
+    
+}
+h1,
+h2 {
+    font-size: 1.4rem;
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 1.1em;
+    text-align: right;
+    text-shadow: 1px 1px White;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+    border-radius: 10px;
+    background: Grey;
+    line-height: 1.2;
+}
+
+h3 {
+    margin: 0;
+    font-size: 0.9em;
+    color: Black;
+    text-shadow: 1px 1px White;
+}
+
+p {
+    margin: 0;
+    font-size: 0.7em;
+    color: White;
+}
+
+.logo {
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+/* CSS para navegadores que no soportan CSS-Grid */
+
+li {
+    width: 300px;
+    float: left;
+    margin: 10px;
+    text-shadow: 1px 1px Black;
+}
+
+footer {
+    display: inline;
+}
+
+.creditos {
+    margin-left: 1em;
+    max-width: 600px;
+    font-size: 80%;
+}
+
+a {
+    color: Whitesmoke;
+    text-shadow: 2px 2px Grey;
+}
+
+@supports (display: grid) {
+    /* Restauro valores para navegadores que no soportan css-grid */
+    li {
+        float: none;
+        height: auto;
+        width: auto;
+        margin: none;
+    }
+
+    /* CSS-Grid Principal */
+    main {
+        display: grid;
+        grid-template-rows: repeat(12, 10vw);
+        grid-template-columns: repeat(5, 15vw);
+    }
+    .logo {
+        grid-row: 1;
+        grid-column: auto;
+    }
+    .logo img {
+        width: 15vw;
+    }
+    header {
+        grid-row: 2 / 3;
+        grid-column: 1 / 4;
+        padding-top: 2em;
+    }
+    ul {
+        grid-row: 2 / 9;
+        grid-column: 1 / 8;
+    }
+
+    /* 12 posiciones (sub-grid) */
+    ul {
+        display: grid;
+        grid-template-rows: repeat(10, 10vw);
+        grid-template-columns: repeat(4, 15vw);
+    }
+    li:nth-child(1) {
+        grid-row: 1;
+        grid-column: 3;
+        background: Red;
+    }
+    li:nth-child(2) {
+        grid-row: 2;
+        grid-column: 4;
+        background: Maroon;
+    }
+    li:nth-child(3) {
+        grid-row: 3;
+        grid-column: 1;
+        background: Yellow;
+        
+    }
+    li:nth-child(4) {
+        grid-row: 4;
+        grid-column: 2;
+        background: Olive;
+    }
+    li:nth-child(5) {
+        grid-row: 4;
+        grid-column: 4;
+        background: Lime;
+    }
+    li:nth-child(6) {
+        grid-row: 5;
+        grid-column: 1;
+        background: Green;
+    }
+    li:nth-child(7) {
+        grid-row: 5;
+        grid-column: 3;
+        background: Aqua;
+    }
+    li:nth-child(8) {
+        grid-row: 6;
+        grid-column: 2;
+        background: Teal;
+    }
+    li:nth-child(9) {
+        grid-row: 7;
+        grid-column: 4;
+        background: Blue;
+    }
+    li:nth-child(10) {
+        grid-row: 8;
+        grid-column: 1;
+        background: Navy;
+    }
+    li:nth-child(11) {
+        grid-row: 9;
+        grid-column: 3;
+        background: Fuchsia;
+    }
+    li:nth-child(12) {
+        grid-row: 10;
+        grid-column: 2;
+        background: Purple;
+    }
+
+    .creditos {
+        grid-row: 12;
+        grid-column: 2 / 5;
+        text-align: center;
+    }
+
+}
